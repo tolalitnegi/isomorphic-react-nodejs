@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>React Isomorphic Server Side Rendering Example</title>
+    <link href='http://www.michaelkors.com/css/category_medium.css' rel="stylesheet">
+    <link href='http://www.michaelkors.com/css/style.css' rel="stylesheet">
+    <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css' rel="stylesheet">
+    <link href='http://www.michaelkors.com/css/category.css' rel="stylesheet">
+    
+    <script src="js/react.js"></script>
+    <script src="js/react-dom.js"></script>
+    <script src="js/JSXTransformer.js"></script>
+
+</head>
+
+<body>
+    <h4 id="main-title">Isomorphic Server Side Rendering with React</h4>
+
+    <div class="logo_container">
+        <div class="logo">
+            <a href="/" title="Michael Kors" class="michael_kors_logo" tabindex="4"> 
+              <img width="355" height="58" src="http://www.michaelkors.com/img/logo_mk.png" alt="Michael Kors" id="siteTitleImage">
+            </a>
+        </div>
+    </div>
+
+
+    <div class="breadcrumb_container">
+        <div class="breadcrumb">
+            <ul>
+                <li><a href="http://www.michaelkors.com/" title="home">Home</a>
+                </li>
+
+                <input type="hidden" value="SHOES" id="breadCrumbCatDisplayName">
+
+                <li><a href="http://www.michaelkors.com/shoes/_/N-28b8" title="SHOES">SHOES</a>
+                </li>
+
+                <li>
+                    <h1>VIEW ALL SHOES</h1>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+
+    <div class="container">
+      <div class="row">
+      <div class="col-md-3">
+        facets
+      </div>
+      <div class="col-md-9">
+      
+        <div id="react-main-mount-list">
+            <%- productList %>
+        </div>
+        
+      </div>
+      </div>
+    </div>
+    
+
+    <!-- comment out main.js to see server side only rendering -->
+    <script src="/main.js"></script>
+
+</body>
+
+</html>
