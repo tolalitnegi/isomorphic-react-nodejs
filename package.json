@@ -1,5 +1,6 @@
 {
-  "name": "node-authentication",
+  "name": "isomorphic react node app",
+  "description": "handson",
   "main": "server.js",
   "dependencies": {
     "body-parser": "~1.0.0",
